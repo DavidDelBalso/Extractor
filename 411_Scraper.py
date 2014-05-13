@@ -34,7 +34,7 @@ if totalcount.find(',') != -1:
     totalcount.remove(',')
     totalcount = ''.join(totalcount)
 
-
+# Changes a string of numbers to an integer
 def num(s):
     try:
         return int(s)
@@ -54,10 +54,10 @@ else:
 
 # Getting the source codes
 
-def masterfunction(numberofpages):
+def mainfunction(numberofpages):
     n = 1
     peoplecount = 25
-    finalarray = ""
+    finalstring = ""
     while n <= numberofpages:
         urlstring = starturl + str(n)
         htmlfile = urllib.urlopen(urlstring)
@@ -70,6 +70,7 @@ def masterfunction(numberofpages):
         if n == numberofpages:
             peoplecount = htmltext.count('itemprop="name" content', 0, len(htmltext))
 
+        #Creating an array for the links of people on each page
         def target(page):
             a = 1
             x = []
@@ -191,12 +192,12 @@ def masterfunction(numberofpages):
             return k
     
         
-        finalarray = finalarray + extract()
+        finalstring = finalstring + extract()
     
-    return finalarray
+    return finalstring
 
 
-final = masterfunction(InputNumberOfPagesHere)
+final = mainfunction(InputNumberOfPagesHere)
 
 
 
