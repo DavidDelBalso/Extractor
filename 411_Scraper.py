@@ -16,32 +16,6 @@ distance = "30"
 
 # Run the code
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 starturl = "http://411.ca/search/?lang=en&q=" + profession + "+" + area + "&fdist=" + distance + "&st=business&p="
 
 import urllib
