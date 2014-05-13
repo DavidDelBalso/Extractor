@@ -167,7 +167,7 @@ def mainfunction(numberofpages):
                     z = z + postalcode + ","
 
                 # Telephone
-                start_quote = htmltext2.find('telephone')
+                start_quote = htmltext2.find('telephone"')
                 if start_quote > 0 :
                     end_quote = htmltext2.find('</span>', start_quote)
                     phone = htmltext2[start_quote + 11:end_quote]
