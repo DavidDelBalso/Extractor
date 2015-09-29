@@ -2,7 +2,7 @@
 # Then enter the profession you are looking for below that in quoatation marks as well
 
 
-area = "vaughan" 
+area = "vaughan"
 
 profession = "accountant"
 
@@ -209,6 +209,8 @@ with open(area + ".csv", "w") as text_file:
 
 
 print "Done, you can now open the file in Microsoft Excel"
+
+# this is the end of the program and an excel document with all of the results will be saved to the same folder in which this code is saved
 
 
 # End of Code
